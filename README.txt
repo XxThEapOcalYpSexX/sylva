@@ -1,11 +1,9 @@
-SYLVA — Carnet forestier v3
+SYLVA 7.0 — Première étape fonctionnelle
 
-INSTALLATION : déposer tous les fichiers de ce dossier à la racine d’un site HTTPS (ex. GitHub Pages). Ouvrir dans Safari, puis Partager > Sur l’écran d’accueil. Ouvrir une fois avec Internet et tester le mode Avion.
+Nouveautés immédiatement utilisables : accueil avec prénom, heures par jour, statuts supplémentaires, amélioration de la navigation, instructions pour rappel iPhone.
 
-DONNÉES : conservées dans IndexedDB sur cet appareil. Réglages > Exporter JSON pour sauvegarder, puis stocker le fichier dans Fichiers/iCloud Drive. Le CSV heures et le CSV chantiers peuvent être ouverts dans Numbers/Excel.
+IMPORTANT : la connexion multi-entreprises, les permissions sécurisées, les photos synchronisées et les notifications push ne sont PAS encore activées. Elles nécessitent un serveur et une base de données Supabase. Ne pas créer de faux comptes utilisateurs dans le stockage local.
 
-CALCUL : stères = L × l × H ; m³ convertis = stères × 0,63 (convention configurable dans une version future). Heures supplémentaires = temps travaillé au-delà de 9h par jour, indicatif et non un calcul de paie.
+Conserver une sauvegarde JSON avant toute mise à jour. Les données IndexedDB existantes sont préservées tant que le même domaine et le stockage Safari sont conservés.
 
-LIMITES : journées sur une seule date, une seule plage de pause, une seule affectation chantier par jour. Pas de synchronisation automatique avec Calendrier Apple. Le GPS dépend des autorisations et de la disponibilité de la position. Le stockage local peut être effacé : sauvegardes régulières indispensables.
-
-Version 5 : solde quotidien signé (temps travaillé - 9h), avec recalcul des anciennes journées pour les statistiques et exports.
+Voir ARCHITECTURE-V7.md et supabase-schema.sql.
