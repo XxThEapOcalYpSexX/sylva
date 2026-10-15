@@ -7,3 +7,5 @@ DONNÉES : conservées dans IndexedDB sur cet appareil. Réglages > Exporter JSO
 CALCUL : stères = L × l × H ; m³ convertis = stères × 0,63 (convention configurable dans une version future). Heures supplémentaires = temps travaillé au-delà de 9h par jour, indicatif et non un calcul de paie.
 
 LIMITES : journées sur une seule date, une seule plage de pause, une seule affectation chantier par jour. Pas de synchronisation automatique avec Calendrier Apple. Le GPS dépend des autorisations et de la disponibilité de la position. Le stockage local peut être effacé : sauvegardes régulières indispensables.
+
+Version 5 : solde quotidien signé (temps travaillé - 9h), avec recalcul des anciennes journées pour les statistiques et exports.
